@@ -2,26 +2,35 @@ import kotlin.NullPointerException
 
 fun main() {
     println("--------------")
+
     //## Part I - Null Safety.
     //In the code below, add an if statement to the beginning of getLength that returns zero if str is null
     println("\n## Part I")
+
     println("String length is: ${getLength("This is a string!")}")
     println("--------------")
+
     println("String length is: ${getLength(null)}")
     println("--------------")
+
     //## Part II - Strings.
     //Write a Kotlin program to get a substring of a given string between two specified positions.
     println("\n## Part II")
+
     var old = "The quick brown fox jumps over the lazy dog."
     println(subString(6, 34, old))
     println("--------------")
+
     println(subString(-4, 34, old))
     println("--------------")
+
     //## Part III - Numbers.
     //Write a Kotlin program to convert temperature from Fahrenheit to Celsius degree.
     println("\n## Part III")
+
     println(fahrenheitToCelsius(212))
     println("--------------")
+
     println(fahrenheitToCelsius(null))
     println("--------------")
 }
