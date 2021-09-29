@@ -1,3 +1,7 @@
+/*
+Name : Husam Talal Metro
+Homework : HW , Week 1 , Day 04
+ */
 fun main() {
     // Question 1 We called the method twice one with string , the other with null
     println("str = (This is a string!) , result = ${getLength("This is a string!")}")
