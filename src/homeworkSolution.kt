@@ -1,6 +1,5 @@
 // HW_Week1_Day4_StringsAndNumbers 😃 ..
 
-
 fun main(args: Array<String>) {
     println(getLength("This is a string!"))
     println("-----------------------------------------------------")
