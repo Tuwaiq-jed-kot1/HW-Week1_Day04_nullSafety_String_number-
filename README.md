@@ -88,8 +88,6 @@ new = brown fox jumps.
 
 
 
-
-
 # Learning Resources  📚
 * [Null Safety in Kotlin](https://kotlinlang.org/docs/reference/null-safety.html)
 * [Strings in Kotlin](https://www.w3schools.com/kotlin/kotlin_strings.php)
