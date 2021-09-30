@@ -26,6 +26,7 @@ fun main(args: Array<String>) {
 }
 ```
 /// quesstion 1////////
+
 fun getLength(str: String?):Int {
 return if (str == null) 0 else str.toInt()
 }
@@ -34,8 +35,7 @@ fun main(args: Array<String>) {
 println(getLength("This is a string!"))
 }
 
-
-
+  
 
 ## Part II - Strings.
 ---
