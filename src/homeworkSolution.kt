@@ -1,24 +1,20 @@
 fun main(){
 
     //---------------------------------------------------------//
-    //Part1//
-    fun getLength(str: String?) : Int {
+    //Part1 - Recoded(NEW!!)//
 
-        //First we create a variable and assign null to them
-        var checkNull : String? = null
-        //Then, use an if statement to determine the nullabilty of str
-        if(!checkNull.isNullOrEmpty()){
-            println("This is not a null")
+    fun getLengthName() {
+        val str: String? = "Second time is the charm"
 
-        }else{
-            println(0)
+        if (!str.isNullOrEmpty()) {
+            println("The length of the sentence is:${str!!.length}")
+        } else {
 
+            print("This sentence is null" + 0)
         }
-        //Finally, after returning 0 if its null we also return the length of the string which is 17
-        return str!!.length
     }
 
-    println(getLength("This is a string!"))
+    getLengthName()
 
 
     //---------------------------------------------------------//
