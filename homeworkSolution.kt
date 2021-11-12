@@ -1,34 +1,20 @@
-//Part|
-fun main(){
-    fun getLength(str: String?) : Int {
-        val l = if (str != null) str.length else 0
-        }//null check
-
-        return str.length;
-    }
-
-    fun main(args: Array<String>) {
-        println(getLength('This is a string!'))
-    }
+//Part| -function
+fun getLength(str: String?) : Int {
+    // Add null check here
+    if (str != null) {
+        return str.length
+    }else return 0
 }
-//end Part|
+fun main() {
+    //part| -function call
+    println(getLength("This is a string!"))
 
-
-
-
-//Part||
-fun main(){
+    //part||
     val str = "The quick brown fox jumps over the lazy dog"
     val str2 = str.substring(str.indexOf("brown"),str.indexOf("over"))
     println(str2)
-}
-//end Part||
 
-
-
-
-//Part|||
-fun main() {
+    //part|||
     val f: Double? = "212".toDoubleOrNull()
     try {
         val c = ((5 * (f!! - 32)) / 9)
@@ -37,4 +23,3 @@ fun main() {
         println("Your error is: $e")
     }
 }
-//end Part|||
