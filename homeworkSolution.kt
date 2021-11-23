@@ -67,11 +67,13 @@ fun main() {
 
     println(fahToCel(212))
 }
-fun fahToCel(fahD:Int?){
-    val fahrenheit:Int? = fahD
-    if (fahrenheit!=null)
-    var celsius:Double = (5.0 *(fahrenheit.toDoubleOrNull() ?:991) - 32.0) / 9.0
+fun intFahToCel(fah:Int?) {
+    var cel = 0.0
+    if (fah != null) {
+        cel = ((5.0 * (fah - 32)) / 9)
 
-    println("$fahrenheit degree Fahrenheit is equal to $celsius in Celsius.")
+        println("${fah.toDouble()} degree in Fahrenheit is equal to $cel in Celsius.")
+    }
+    else println("$fah is null, operation can't be done.")
 }
 // END OF PART THREE
